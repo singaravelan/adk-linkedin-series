@@ -14,25 +14,17 @@
 
 ---
 
-## Prerequisites
+## Setup
 
-| Requirement | Notes |
-|---|---|
-| Python 3.10+ | [python.org](https://python.org) |
-| Ollama | [ollama.com](https://ollama.com) — install and start the server |
-| A tool-capable model | See model choice section below |
+### Step 1 — Install Ollama
 
----
-
-## Step 1 — Install Dependencies
+Download and install Ollama from [ollama.com](https://ollama.com), then start the server:
 
 ```bash
-pip install google-adk litellm
+ollama serve
 ```
 
----
-
-## Step 2 — Pull an Ollama Model
+### Step 2 — Pull a Model
 
 ```bash
 ollama pull mistral-small3.1
@@ -40,21 +32,31 @@ ollama pull mistral-small3.1
 
 Browse all available models at: https://ollama.com/search
 
----
+### Step 3 — Install Python Dependencies
 
-## Step 3 — Configure the .env File
+```bash
+pip install google-adk litellm
+```
 
-The `.env` file in this folder is automatically loaded by ADK at startup — no manual `export` needed:
+### Step 4 — Configure the .env File
+
+Copy the example env file and update if needed:
+
+```bash
+cp .env.example .env
+```
+
+The `.env` is automatically loaded by ADK at startup — no manual `export` needed:
 
 ```ini
 OLLAMA_API_BASE=http://localhost:11434
 ```
 
-> ⚠️ **Important:** Always use the `ollama_chat` provider prefix (not `ollama`) when specifying the model in ADK. Using `ollama` can cause infinite tool call loops.
+> **Note:** Always use the `ollama_chat/` prefix when specifying the model (not `ollama/`). Using `ollama/` can cause infinite tool call loops.
 
 ---
 
-## Step 4 — Run the Agent
+## Step 5 — Run the Agent
 
 ### Option A — ADK Web UI (recommended for beginners)
 
@@ -100,7 +102,7 @@ week1_intro_to_adk/
 ├── agent.py           # Minimal root_agent definition
 ├── .env               # Ollama environment variables — loaded automatically
 ├── .env.example       # Example env config to copy
-└── instruction.md     # This file
+└── README.md          # This file
 ```
 
 ---
