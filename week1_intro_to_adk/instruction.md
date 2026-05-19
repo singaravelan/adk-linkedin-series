@@ -10,8 +10,7 @@
 
 - What Google ADK is and why it matters
 - How to connect ADK to a locally-running Ollama model
-- How to give your agent tools (functions it can call)
-- How to run the agent via `adk web` or directly in Python
+- How to run a minimal agent via `adk web`
 
 ---
 
@@ -33,28 +32,13 @@ pip install google-adk litellm
 
 ---
 
-## Step 2 — Pull a Tool-Capable Ollama Model
-
-Not all Ollama models support tool/function calling. Pick one that does:
+## Step 2 — Pull an Ollama Model
 
 ```bash
-# Recommended for tool use
 ollama pull mistral-small3.1
-
-# Verify it has tool support
-ollama show mistral-small3.1
 ```
 
-You should see `tools` listed under **Capabilities**:
-
-```
-Capabilities
-  completion
-  vision
-  tools        ← this is required
-```
-
-Browse all tool-capable models at: https://ollama.com/search?c=tools
+Browse all available models at: https://ollama.com/search
 
 ---
 
@@ -91,69 +75,21 @@ adk run week1_intro_to_adk
 
 ## Understanding the Code
 
-### The Model
-
-```python
-from google.adk.models.lite_llm import LiteLlm
-
-model = LiteLlm(model="ollama_chat/mistral-small3.1")
-```
-
-ADK uses LiteLLM as a bridge to Ollama. Always use the `ollama_chat/` prefix.
-
-### The Agent
-
 ```python
 from google.adk.agents import Agent
+from google.adk.models.lite_llm import LiteLlm
 
 root_agent = Agent(
-    model=model,
+    model=LiteLlm(model="ollama_chat/mistral-small3.1"),
     name="local_assistant",
-    instruction="You are a helpful local assistant...",
-    tools=[get_weather, add_numbers],
+    description="A local AI assistant powered by Ollama.",
+    instruction="You are a helpful assistant running entirely on the user's machine via Ollama. Be concise and friendly.",
 )
 ```
 
+- `model` — uses LiteLLM as a bridge to Ollama; always use the `ollama_chat/` prefix
 - `instruction` — the system prompt that shapes your agent's behavior
-- `tools` — Python functions the agent can call autonomously
-
-### The Tools
-
-Any regular Python function with type hints and a docstring becomes a tool:
-
-```python
-def get_weather(city: str) -> dict:
-    """Returns weather for the given city."""
-    ...
-```
-
-ADK automatically generates the tool schema from your function signature.
-
----
-
-## Alternative: Use OpenAI Provider
-
-If you prefer the OpenAI-compatible endpoint:
-
-```bash
-export OPENAI_API_BASE="http://localhost:11434/v1"
-export OPENAI_API_KEY="anything"
-```
-
-```python
-model = LiteLlm(model="openai/mistral-small3.1")
-```
-
----
-
-## Debugging
-
-Add this right after your imports to see the raw requests sent to Ollama:
-
-```python
-import litellm
-litellm._turn_on_debug()
-```
+- ADK looks for `root_agent` in `agent.py` automatically
 
 ---
 
@@ -161,8 +97,9 @@ litellm._turn_on_debug()
 
 ```
 week1_intro_to_adk/
-├── agent.py           # Agent definition — ADK looks for root_agent here
+├── agent.py           # Minimal root_agent definition
 ├── .env               # Ollama environment variables — loaded automatically
+├── .env.example       # Example env config to copy
 └── instruction.md     # This file
 ```
 
