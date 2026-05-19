@@ -20,58 +20,58 @@ Each week:
 
 | Week | Topic | Folder | Status |
 |------|-------|--------|--------|
-| 1 | Intro to ADK — Running agents locally with Ollama | [week1_intro_to_adk](./week1_intro_to_adk/) | ✅ Published |
-| 2 | Multi-tool agents — Chaining tools together | week2_multi_tool_agents | 🔜 Coming |
-| 3 | Sessions & Memory — Making agents remember context | week3_sessions_and_memory | 🔜 Coming |
-| 4 | LLM Agents deep dive — Instructions, tools & behavior | week4_llm_agents | 🔜 Coming |
-| 5 | Sequential workflow agents | week5_sequential_agents | 🔜 Coming |
-| 6 | Loop agents — Iteration and retry patterns | week6_loop_agents | 🔜 Coming |
-| 7 | Parallel agents — Running tasks concurrently | week7_parallel_agents | 🔜 Coming |
-| 8 | Custom agents — Building your own agent class | week8_custom_agents | 🔜 Coming |
-| 9 | Multi-agent systems — Orchestrators & subagents | week9_multi_agent_systems | 🔜 Coming |
-| 10 | Agent routing — Smart delegation between agents | week10_agent_routing | 🔜 Coming |
-| 11 | Function tools — Writing tools ADK agents can use | week11_function_tools | 🔜 Coming |
-| 12 | MCP tools — Connecting to Model Context Protocol servers | week12_mcp_tools | 🔜 Coming |
-| 13 | OpenAPI tools — Auto-generate tools from API specs | week13_openapi_tools | 🔜 Coming |
-| 14 | Tool authentication — Secure tool access patterns | week14_tool_auth | 🔜 Coming |
-| 15 | Context & caching — Efficient context management | week15_context_caching | 🔜 Coming |
-| 16 | Context compression — Keeping agents within limits | week16_context_compression | 🔜 Coming |
-| 17 | State management — Sharing state across agents | week17_state_management | 🔜 Coming |
-| 18 | Long-term memory — Agents that learn over time | week18_long_term_memory | 🔜 Coming |
-| 19 | Callbacks — Hooks into agent lifecycle events | week19_callbacks | 🔜 Coming |
-| 20 | Artifacts — File and binary data in agents | week20_artifacts | 🔜 Coming |
-| 21 | Events & event loop — Understanding ADK internals | week21_events | 🔜 Coming |
-| 22 | Streaming agents — Real-time responses with Gemini Live | week22_streaming | 🔜 Coming |
-| 23 | ADK web UI — Running and testing agents locally | week23_adk_web_ui | 🔜 Coming |
-| 24 | ADK CLI — Command-line agent operations | week24_adk_cli | 🔜 Coming |
-| 25 | API server mode — Exposing your agent as a REST API | week25_api_server | 🔜 Coming |
-| 26 | Deploying to Cloud Run — From laptop to production | week26_cloud_run | 🔜 Coming |
-| 27 | Deploying to GKE — Kubernetes-scale agent serving | week27_gke | 🔜 Coming |
-| 28 | Observability — Logging, metrics, and traces | week28_observability | 🔜 Coming |
-| 29 | Agent evaluation — Testing agent quality | week29_evaluation | 🔜 Coming |
-| 30 | User simulation — Automated agent testing | week30_user_simulation | 🔜 Coming |
-| 31 | Safety & security — Guardrails for production agents | week31_safety | 🔜 Coming |
-| 32 | Using Gemini models — Native ADK model integration | week32_gemini_models | 🔜 Coming |
-| 33 | Using Gemma (open models) — Local & cloud deployment | week33_gemma | 🔜 Coming |
-| 34 | Using Claude in ADK — Anthropic model integration | week34_claude_in_adk | 🔜 Coming |
-| 35 | LiteLLM connector — 100+ models with one interface | week35_litellm | 🔜 Coming |
-| 36 | vLLM — High-throughput local model serving | week36_vllm | 🔜 Coming |
-| 37 | Model routing — Dynamic model selection at runtime | week37_model_routing | 🔜 Coming |
-| 38 | Grounding with Google Search — Real-time knowledge | week38_search_grounding | 🔜 Coming |
-| 39 | A2A Protocol — Agent-to-agent communication | week39_a2a_protocol | 🔜 Coming |
-| 40 | Building an A2A server — Exposing your agent to others | week40_a2a_server | 🔜 Coming |
-| 41 | Consuming A2A agents — Calling remote agents | week41_a2a_client | 🔜 Coming |
-| 42 | ADK Plugins — Extending ADK capabilities | week42_plugins | 🔜 Coming |
-| 43 | ADK 2.0 — Graph-based workflows deep dive | week43_adk2_workflows | 🔜 Coming |
-| 44 | ADK 2.0 — Collaborative multi-agent teams | week44_agent_teams | 🔜 Coming |
-| 45 | ADK 2.0 — Dynamic workflow generation | week45_dynamic_workflows | 🔜 Coming |
-| 46 | Human-in-the-loop — Agents that ask for confirmation | week46_human_in_the_loop | 🔜 Coming |
-| 47 | Ambient agents — Background & event-triggered agents | week47_ambient_agents | 🔜 Coming |
-| 48 | Resume & cancel — Long-running agent control | week48_resume_cancel | 🔜 Coming |
-| 49 | LiteRT-LM — On-device model inference | week49_litert_lm | 🔜 Coming |
-| 50 | End-to-end project — Customer support agent | week50_e2e_support_agent | 🔜 Coming |
-| 51 | End-to-end project — Research & summarization agent | week51_e2e_research_agent | 🔜 Coming |
-| 52 | Year in review — ADK ecosystem & what's next | week52_year_review | 🔜 Coming |
+| 1 | Running Agents Locally with Ollama — Intro to ADK | [week1_intro_to_adk](./week1_intro_to_adk/) | ✅ Published |
+| 2 | ADK vs. Other Agent Frameworks | week2_adk_vs_frameworks | 🔜 Coming |
+| 3 | Getting Started with ADK in Python | week3_getting_started_python | 🔜 Coming |
+| 4 | ADK Python Project Structure — Best practices | week4_project_structure | 🔜 Coming |
+| 5 | ADK Python Installation & Advanced Setup | week5_advanced_setup | 🔜 Coming |
+| 6 | Coding ADK Agents with AI — AI-assisted scaffolding | week6_coding_with_ai | 🔜 Coming |
+| 7 | ADK Technical Architecture — Deep dive | week7_architecture | 🔜 Coming |
+| 8 | The ADK CLI — Power tools for agent developers | week8_adk_cli | 🔜 Coming |
+| 9 | LLM Agents in ADK — The core building block explained | week9_llm_agents | 🔜 Coming |
+| 10 | Workflow Agents — Sequential, Loop, and Parallel demystified | week10_workflow_agents | 🔜 Coming |
+| 11 | Sequential Agents — Designing step-by-step agent pipelines | week11_sequential_agents | 🔜 Coming |
+| 12 | Loop Agents — Iterative reasoning and when to use it | week12_loop_agents | 🔜 Coming |
+| 13 | Parallel Agents — Running tasks concurrently | week13_parallel_agents | 🔜 Coming |
+| 14 | Custom Agents — Going beyond built-in agent types | week14_custom_agents | 🔜 Coming |
+| 15 | Multi-Agent Systems — Orchestrating teams of specialized agents | week15_multi_agent_systems | 🔜 Coming |
+| 16 | Agent Routing — How ADK directs tasks to the right agent | week16_agent_routing | 🔜 Coming |
+| 17 | Agent Configuration — Fine-tuning agent behavior | week17_agent_config | 🔜 Coming |
+| 18 | The ADK Visual Builder — Building agents without writing code | week18_visual_builder | 🔜 Coming |
+| 19 | Using Gemini with ADK — Google's flagship model in action | week19_gemini | 🔜 Coming |
+| 20 | Using Claude with ADK — Cross-model flexibility in practice | week20_claude | 🔜 Coming |
+| 21 | Running Local Models with ADK — Ollama and vLLM integration | [week21_local_models](./week1_intro_to_adk/) | 🔜 Coming |
+| 22 | LiteLLM and ADK — Universal model routing made easy | week22_litellm | 🔜 Coming |
+| 23 | Model Routing in ADK — Dynamically selecting the right model | week23_model_routing | 🔜 Coming |
+| 24 | Function Tools in ADK — Building custom tools for your agents | week24_function_tools | 🔜 Coming |
+| 25 | MCP Tools — Connecting agents to the Model Context Protocol ecosystem | week25_mcp_tools | 🔜 Coming |
+| 26 | OpenAPI Tools — Turning any REST API into an agent capability | week26_openapi_tools | 🔜 Coming |
+| 27 | How ADK Manages Context — Treating context like source code | week27_context | 🔜 Coming |
+| 28 | Context Caching in ADK — Reducing latency and cost at scale | week28_context_caching | 🔜 Coming |
+| 29 | Context Compression — Keeping agents fast over long sessions | week29_context_compression | 🔜 Coming |
+| 30 | Sessions in ADK — Managing stateful agent conversations | week30_sessions | 🔜 Coming |
+| 31 | State Management — Passing and persisting data across agent turns | week31_state_management | 🔜 Coming |
+| 32 | Memory in ADK — Short-term vs. long-term memory patterns | week32_memory | 🔜 Coming |
+| 33 | The ADK Agent Runtime — How agents run in production | week33_agent_runtime | 🔜 Coming |
+| 34 | ADK Web Interface — Visualizing and debugging agents in the browser | week34_web_interface | 🔜 Coming |
+| 35 | Deploying ADK Agents to Cloud Run | week35_cloud_run | 🔜 Coming |
+| 36 | Deploying ADK Agents to GKE — Enterprise-grade Kubernetes deployments | week36_gke | 🔜 Coming |
+| 37 | Ambient Agents — Agents that run in the background autonomously | week37_ambient_agents | 🔜 Coming |
+| 38 | Resuming and Cancelling Agent Runs — Building reliable workflows | week38_resume_cancel | 🔜 Coming |
+| 39 | Runtime Configuration — Tuning agent execution for performance and cost | week39_runtime_config | 🔜 Coming |
+| 40 | Observability in ADK — Logging, Metrics, and Traces for production agents | week40_observability | 🔜 Coming |
+| 41 | Evaluating ADK Agents — Going beyond vibes with structured evaluation | week41_evaluation | 🔜 Coming |
+| 42 | User Simulation for Agent Testing — Automated QA for conversational agents | week42_user_simulation | 🔜 Coming |
+| 43 | Custom Metrics in ADK Eval — Defining what 'good' means for your agent | week43_custom_metrics | 🔜 Coming |
+| 44 | Optimizing Agents with ADK — Closing the loop from eval to improvement | week44_optimization | 🔜 Coming |
+| 45 | Callbacks in ADK — Hooking into the agent lifecycle | week45_callbacks | 🔜 Coming |
+| 46 | Artifacts in ADK — Handling files and binary data in agent workflows | week46_artifacts | 🔜 Coming |
+| 47 | The ADK Event Loop — Understanding the heartbeat of an ADK agent | week47_event_loop | 🔜 Coming |
+| 48 | ADK Plugins — Extending the framework with reusable components | week48_plugins | 🔜 Coming |
+| 49 | Agent-to-Agent (A2A) Protocol — How ADK agents communicate | week49_a2a_protocol | 🔜 Coming |
+| 50 | Streaming with Gemini Live API — Real-time audio, video, and images | week50_streaming | 🔜 Coming |
+| 51 | ADK 2.0 — Graph-Based Workflows, Agent Teams, and What's New | week51_adk2 | 🔜 Coming |
+| 52 | The Year in Review — Key ADK milestones, lessons learned, and what's next | week52_year_review | 🔜 Coming |
 
 ---
 
