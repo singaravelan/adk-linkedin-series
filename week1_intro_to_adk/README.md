@@ -109,9 +109,9 @@ week1_intro_to_adk/
 
 ## Next Steps
 
-- Week 2: Multi-tool agents and tool chaining
-- Week 3: Sessions & memory — making your agent remember context
-- Full roadmap: See [README.md](../README.md) at the repo root
+- Week 2: [ADK vs. Other Agent Frameworks](../README.md)
+- Week 3: [Getting Started with ADK in Python](../README.md)
+- Full roadmap: See the [series README](../README.md)
 
 ---
 
